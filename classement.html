@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<title>CastagneMC - Classement</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#1a1a1a;
+color:#e8e1d6;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+height:70px;
+background:rgba(25,25,25,0.9);
+backdrop-filter:blur(8px);
+display:flex;
+align-items:center;
+padding:0 40px;
+border-bottom:1px solid rgba(200,170,120,0.2);
+z-index:100;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-size:22px;
+font-weight:bold;
+color:#e6d3b3;
+}
+
+.logo img{
+height:45px;
+}
+
+.menu{
+margin-left:80px;
+display:flex;
+gap:30px;
+}
+
+.menu a{
+text-decoration:none;
+color:#bfbfbf;
+font-weight:bold;
+padding:8px 14px;
+border-radius:6px;
+transition:0.25s;
+}
+
+.menu a:hover{
+color:#e6d3b3;
+text-shadow:
+0 0 10px #c8a878,
+0 0 20px #c8a878;
+}
+
+.active{
+color:#fff;
+background:rgba(200,170,120,0.15);
+box-shadow:
+0 0 10px rgba(200,170,120,0.7),
+0 0 25px rgba(200,170,120,0.4);
+}
+
+/* TITRE */
+
+.title{
+
+margin-top:120px;
+text-align:center;
+
+}
+
+.title h1{
+
+font-size:50px;
+color:#e6d3b3;
+
+text-shadow:0 0 15px rgba(200,170,120,0.6);
+
+}
+
+/* TABLE */
+
+.leaderboard{
+
+width:80%;
+margin:50px auto;
+
+background:rgba(255,255,255,0.03);
+
+border-radius:12px;
+
+overflow:hidden;
+
+border:1px solid rgba(200,170,120,0.2);
+
+}
+
+table{
+
+width:100%;
+border-collapse:collapse;
+
+}
+
+th{
+
+background:rgba(200,170,120,0.15);
+
+padding:16px;
+
+font-size:18px;
+
+color:#e6d3b3;
+
+}
+
+td{
+
+padding:14px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,0.05);
+
+}
+
+tr:hover{
+
+background:rgba(200,170,120,0.07);
+
+}
+
+/* TOP 3 */
+
+.top1{
+color:#ffd700;
+font-weight:bold;
+}
+
+.top2{
+color:#c0c0c0;
+font-weight:bold;
+}
+
+.top3{
+color:#cd7f32;
+font-weight:bold;
+}
+
+/* WAVES */
+
+.wave{
+
+position:fixed;
+bottom:-120px;
+left:0;
+
+width:200%;
+height:400px;
+
+background:rgba(200,170,120,0.05);
+
+border-radius:45%;
+
+animation:wave 20s linear infinite;
+
+}
+
+.wave:nth-child(2){
+animation-duration:30s;
+opacity:0.4;
+}
+
+.wave:nth-child(3){
+animation-duration:40s;
+opacity:0.25;
+}
+
+@keyframes wave{
+
+0%{transform:translateX(0);}
+50%{transform:translateX(-25%) translateY(-25px);}
+100%{transform:translateX(-50%);}
+
+}
+
+footer{
+
+margin-top:40px;
+text-align:center;
+color:#888;
+padding-bottom:20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="wave"></div>
+<div class="wave"></div>
+<div class="wave"></div>
+
+<div class="navbar">
+
+<div class="logo">
+<img src="logo.png">
+CastagneMC
+</div>
+
+<div class="menu">
+
+<a href="accueil.html">Accueil</a>
+<a href="statistique.html">Statistique</a>
+<a href="classement.html" class="active">Classement</a>
+<a href="vote.html">Vote</a>
+<a href="forum.html">Forum</a>
+
+</div>
+
+</div>
+
+<div class="title">
+<h1>Classement PvP</h1>
+</div>
+
+<div class="leaderboard">
+
+<table>
+
+<tr>
+<th>#</th>
+<th>Player</th>
+<th>Kills</th>
+<th>MMR</th>
+<th>Killstreak</th>
+<th>Total Points</th>
+</tr>
+
+<tr class="top1">
+<td>1</td>
+<td>Azd_</td>
+<td>845</td>
+<td>2140</td>
+<td>32</td>
+<td>2985</td>
+</tr>
+
+<tr class="top2">
+<td>2</td>
+<td>Zxolik</td>
+<td>792</td>
+<td>2050</td>
+<td>27</td>
+<td>2842</td>
+</tr>
+
+<tr class="top3">
+<td>3</td>
+<td>antivirus 5846</td>
+<td>760</td>
+<td>1980</td>
+<td>24</td>
+<td>2700</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Nayko13</td>
+<td>702</td>
+<td>1900</td>
+<td>21</td>
+<td>2505</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>TimePrime_Blat</td>
+<td>689</td>
+<td>1880</td>
+<td>20</td>
+<td>2470</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>Transition timePrime Blat</td>
+<td>640</td>
+<td>1800</td>
+<td>18</td>
+<td>2350</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>BestgameClips</td>
+<td>610</td>
+<td>1760</td>
+<td>16</td>
+<td>2250</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>N/A</td>
+<td>580</td>
+<td>1700</td>
+<td>14</td>
+<td>2150</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>N/A</td>
+<td>550</td>
+<td>1650</td>
+<td>12</td>
+<td>2050</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>N/A</td>
+<td>520</td>
+<td>1600</td>
+<td>10</td>
+<td>1980</td>
+</tr>
+
+</table>
+
+</div>
+
+<footer>
+© 2026 CastagneMC
+</footer>
+
+</body>
+</html>
